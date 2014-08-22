@@ -1,0 +1,3 @@
+release_branch: msg-release
+release_commit_message: "Release ${new_release_version} of epd-messages"
+nextdev_commit_message: "Get ready for next development phase of epd-messages (${new_dev_version})"
