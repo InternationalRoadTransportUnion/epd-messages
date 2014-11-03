@@ -186,6 +186,11 @@
 									<type>xsd</type>
 									<classifier>types</classifier>
 								</artifact>
+								<artifact>
+									<file>TIREPD_Set.xsd</file>
+									<type>xsd</type>
+									<classifier>set</classifier>
+								</artifact>
 							</artifacts>
 						</configuration>
 					</execution>
