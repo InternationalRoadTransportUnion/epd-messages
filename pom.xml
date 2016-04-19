@@ -172,6 +172,16 @@
 									<classifier>epd060</classifier>
 								</artifact>
 								<artifact>
+									<file>TIREPD_IE140.xsd</file>
+									<type>xsd</type>
+									<classifier>epd140</classifier>
+								</artifact>
+								<artifact>
+									<file>TIREPD_IE141.xsd</file>
+									<type>xsd</type>
+									<classifier>epd141</classifier>
+								</artifact>
+								<artifact>
 									<file>TIREPD_IE917.xsd</file>
 									<type>xsd</type>
 									<classifier>epd917</classifier>
