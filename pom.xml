@@ -5,6 +5,30 @@
 
 	<groupId>org.iru.epd</groupId>
 	<artifactId>epd-messages</artifactId>
+
+	<name>epd-messages</name>
+	<description>NCTS inspired schemas for EPD messages</description>
+	<url>https://github.com/InternationalRoadTransportUnion/epd-messages</url>
+	<licenses>
+		<license>
+			<name>The Open Software License 3.0 (OSL-3.0)</name>
+			<url>https://opensource.org/licenses/OSL-3.0</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+	<scm>
+		<connection>scm:git:https://github.com/InternationalRoadTransportUnion/epd-messages.git</connection>
+		<url>https://github.com/InternationalRoadTransportUnion/epd-messages</url>
+	</scm>
+	<developers>
+		<developer>
+			<email>David.Schenk@iru.org</email>
+		</developer>
+		<developer>
+			<email>Matthieu.Verbert@iru.org</email>
+		</developer>
+	</developers>
+
 	<version>1.0.12-SNAPSHOT</version>
 
 	<build>
