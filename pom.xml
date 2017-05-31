@@ -6,7 +6,6 @@
 	<groupId>org.iru.epd</groupId>
 	<artifactId>epd-messages</artifactId>
 	<version>1.0.12-SNAPSHOT</version>
-	<packaging>jar</packaging>
 
 	<build>
 
