@@ -13,8 +13,8 @@
 		<plugins>
 			<plugin>
 				<groupId>org.iru.maven.plugins</groupId>
-				<artifactId>maven-jaxbgenser-plugin</artifactId>
-				<version>1.0.1</version>
+				<artifactId>jaxbgenser-maven-plugin</artifactId>
+				<version>1.0.4</version>
 				<executions>
 					<execution>
 						<goals>
@@ -39,6 +39,14 @@
 								<binding>
 									<fileset>
 										<directory>${basedir}</directory>
+										<includes>
+											<include>*.xjb</include>
+										</includes>
+									</fileset>
+								</binding>
+								<binding>
+									<fileset>
+										<directory>${project.build.directory}/xjb</directory>
 										<includes>
 											<include>*.xjb</include>
 										</includes>
