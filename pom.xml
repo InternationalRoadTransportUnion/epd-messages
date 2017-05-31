@@ -9,15 +9,6 @@
 	<packaging>jar</packaging>
 
 	<build>
-		<resources>
-			<resource>
-				<filtering>false</filtering>
-				<directory>${basedir}</directory>
-				<includes>
-					<include>*.xsd</include>
-				</includes>
-			</resource>
-		</resources>
 
 		<plugins>
 			<plugin>
@@ -44,7 +35,16 @@
 							<goal>generate</goal>
 						</goals>
 						<configuration>
-							<schemaDirectory>${basedir}</schemaDirectory>
+							<bindings>
+								<binding>
+									<fileset>
+										<directory>${basedir}</directory>
+										<includes>
+											<include>*.xjb</include>
+										</includes>
+									</fileset>
+								</binding>
+							</bindings>
 						</configuration>
 					</execution>
 				</executions>
@@ -102,102 +102,102 @@
 						<configuration>
 							<artifacts>
 								<artifact>
-									<file>TIREPD_IE004.xsd</file>
+									<file>${project.build.resources[0].directory}/TIREPD_IE004.xsd</file>
 									<type>xsd</type>
 									<classifier>epd004</classifier>
 								</artifact>
 								<artifact>
-									<file>TIREPD_IE005.xsd</file>
+									<file>${project.build.resources[0].directory}/TIREPD_IE005.xsd</file>
 									<type>xsd</type>
 									<classifier>epd005</classifier>
 								</artifact>
 								<artifact>
-									<file>TIREPD_IE009.xsd</file>
+									<file>${project.build.resources[0].directory}/TIREPD_IE009.xsd</file>
 									<type>xsd</type>
 									<classifier>epd009</classifier>
 								</artifact>
 								<artifact>
-									<file>TIREPD_IE013.xsd</file>
+									<file>${project.build.resources[0].directory}/TIREPD_IE013.xsd</file>
 									<type>xsd</type>
 									<classifier>epd013</classifier>
 								</artifact>
 								<artifact>
-									<file>TIREPD_IE014.xsd</file>
+									<file>${project.build.resources[0].directory}/TIREPD_IE014.xsd</file>
 									<type>xsd</type>
 									<classifier>epd014</classifier>
 								</artifact>
 								<artifact>
-									<file>TIREPD_IE015.xsd</file>
+									<file>${project.build.resources[0].directory}/TIREPD_IE015.xsd</file>
 									<type>xsd</type>
 									<classifier>epd015</classifier>
 								</artifact>
 								<artifact>
-									<file>TIREPD_IE016.xsd</file>
+									<file>${project.build.resources[0].directory}/TIREPD_IE016.xsd</file>
 									<type>xsd</type>
 									<classifier>epd016</classifier>
 								</artifact>
 								<artifact>
-									<file>TIREPD_IE025.xsd</file>
+									<file>${project.build.resources[0].directory}/TIREPD_IE025.xsd</file>
 									<type>xsd</type>
 									<classifier>epd025</classifier>
 								</artifact>
 								<artifact>
-									<file>TIREPD_IE028.xsd</file>
+									<file>${project.build.resources[0].directory}/TIREPD_IE028.xsd</file>
 									<type>xsd</type>
 									<classifier>epd028</classifier>
 								</artifact>
 								<artifact>
-									<file>TIREPD_IE029.xsd</file>
+									<file>${project.build.resources[0].directory}/TIREPD_IE029.xsd</file>
 									<type>xsd</type>
 									<classifier>epd029</classifier>
 								</artifact>
 								<artifact>
-									<file>TIREPD_IE045.xsd</file>
+									<file>${project.build.resources[0].directory}/TIREPD_IE045.xsd</file>
 									<type>xsd</type>
 									<classifier>epd045</classifier>
 								</artifact>
 								<artifact>
-									<file>TIREPD_IE051.xsd</file>
+									<file>${project.build.resources[0].directory}/TIREPD_IE051.xsd</file>
 									<type>xsd</type>
 									<classifier>epd051</classifier>
 								</artifact>
 								<artifact>
-									<file>TIREPD_IE055.xsd</file>
+									<file>${project.build.resources[0].directory}/TIREPD_IE055.xsd</file>
 									<type>xsd</type>
 									<classifier>epd055</classifier>
 								</artifact>
 								<artifact>
-									<file>TIREPD_IE060.xsd</file>
+									<file>${project.build.resources[0].directory}/TIREPD_IE060.xsd</file>
 									<type>xsd</type>
 									<classifier>epd060</classifier>
 								</artifact>
 								<artifact>
-									<file>TIREPD_IE140.xsd</file>
+									<file>${project.build.resources[0].directory}/TIREPD_IE140.xsd</file>
 									<type>xsd</type>
 									<classifier>epd140</classifier>
 								</artifact>
 								<artifact>
-									<file>TIREPD_IE141.xsd</file>
+									<file>${project.build.resources[0].directory}/TIREPD_IE141.xsd</file>
 									<type>xsd</type>
 									<classifier>epd141</classifier>
 								</artifact>
 								<artifact>
-									<file>TIREPD_IE917.xsd</file>
+									<file>${project.build.resources[0].directory}/TIREPD_IE917.xsd</file>
 									<type>xsd</type>
 									<classifier>epd917</classifier>
 								</artifact>
 								<artifact>
-									<file>TIREPD_IE928.xsd</file>
+									<file>${project.build.resources[0].directory}/TIREPD_IE928.xsd</file>
 									<type>xsd</type>
 									<classifier>epd928</classifier>
 								</artifact>
 								<artifact>
-									<file>TIREPD_Types.xsd</file>
+									<file>${project.build.resources[0].directory}/TIREPD_Types.xsd</file>
 									<type>xsd</type>
 									<classifier>types</classifier>
 								</artifact>
 								<artifact>
-									<file>TIREPD_Set.xsd</file>
+									<file>${project.build.resources[0].directory}/TIREPD_Set.xsd</file>
 									<type>xsd</type>
 									<classifier>set</classifier>
 								</artifact>
