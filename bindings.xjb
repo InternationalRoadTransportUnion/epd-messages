@@ -8,7 +8,7 @@
 
 	<jxb:bindings schemaLocation="src/main/resources/TIREPD_Set.xsd">
 		<jxb:schemaBindings>
-			<jxb:package name="org.iru.epd.message" />
+			<jxb:package name="org.iru.epd.model.message.nons" />
 		</jxb:schemaBindings>
 	</jxb:bindings>
 	
