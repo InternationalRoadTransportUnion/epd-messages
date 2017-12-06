@@ -1,81 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" 
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
 xmlns:tns="http://epd.iru.org/model/message/envelope" targetNamespace="http://epd.iru.org/model/message/envelope"
  elementFormDefault="qualified">
-	<xs:import namespace="http://www.w3.org/2000/09/xmldsig#" schemaLocation="xmldsig-core-schema.xsd" />
-	<xs:import namespace="http://www.w3.org/2005/05/xmlmime" schemaLocation="xmlmime.xsd" />
+  <xs:import namespace="http://www.w3.org/2000/09/xmldsig#" schemaLocation="xmldsig-core-schema.xsd" />
+  <xs:import namespace="http://www.w3.org/2005/05/xmlmime" schemaLocation="xmlmime.xsd" />
 
-	<xs:element name="Envelope" type="tns:EnvelopeType" />
+  <xs:element name="Envelope" type="tns:EnvelopeType" />
 
-	<xs:complexType name="EnvelopeType">
-		<xs:sequence>
-			<xs:element name="Header" type="tns:HeaderType" minOccurs="0" />
-			<xs:element name="Body" type="tns:BodyType" minOccurs="1" />
-			<xs:element name="Attachments" type="tns:AttachmentsType" minOccurs="0" />
-			<xs:element ref="ds:Signature" minOccurs="0" />
-		</xs:sequence>
-	</xs:complexType>
+  <xs:complexType name="EnvelopeType">
+    <xs:sequence>
+      <xs:element name="Header" type="tns:HeaderType" minOccurs="0" />
+      <xs:element name="Body" type="tns:BodyType" minOccurs="1" />
+      <xs:element name="Attachments" type="tns:AttachmentsType" minOccurs="0" />
+      <xs:element ref="ds:Signature" minOccurs="0" />
+    </xs:sequence>
+  </xs:complexType>
 
-	<xs:complexType name="XMLTypeType">
-		<xs:sequence>
-			<xs:element name="Element" type="xs:QName" />
-			<xs:element name="Type" type="xs:QName" minOccurs="0" />
-		</xs:sequence>
-	</xs:complexType>
-	
-	<xs:complexType name="AttachmentTypeType">
-		<xs:complexContent>
-			<xs:extension base="tns:XMLTypeType">
-				<xs:sequence>
-					<xs:any namespace="##other" minOccurs="0" maxOccurs="unbounded" processContents="lax" />
-				</xs:sequence>
-				<xs:attribute name="attachmentId" type="xs:ID" />
-				<xs:anyAttribute namespace="##other" processContents="lax" />
-			</xs:extension>
-		</xs:complexContent>
-	</xs:complexType>
-	
-	<xs:complexType name="AttachmentTypesType">
-		<xs:sequence>
-			<xs:element name="AttachmentType" type="tns:AttachmentTypeType" maxOccurs="unbounded" />
-		</xs:sequence>
-	</xs:complexType>
-	
-	<xs:complexType name="HeaderType">
-		<xs:sequence>
-			<xs:element name="BodyType" type="tns:XMLTypeType" />
-			<xs:element name="AttachmentTypes" type="tns:AttachmentTypesType" minOccurs="0" />
-			<xs:any namespace="##other" minOccurs="0" maxOccurs="unbounded" processContents="lax" />
-		</xs:sequence>
-		<xs:anyAttribute namespace="##other" processContents="lax" />
-	</xs:complexType>
+  <xs:complexType name="XMLTypeType">
+    <xs:sequence>
+      <xs:element name="Element" type="xs:QName" />
+      <xs:element name="Type" type="xs:QName" minOccurs="0" />
+    </xs:sequence>
+  </xs:complexType>
 
-	<xs:complexType name="BinaryAttachmentType">
-		<xs:sequence>
-			<xs:element name="Data" type="xmime:base64Binary" />
-			<xs:element name="AttachmentName" type="xs:string" />
-		</xs:sequence>
-	</xs:complexType>
+  <xs:complexType name="AttachmentTypeType">
+    <xs:complexContent>
+      <xs:extension base="tns:XMLTypeType">
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:any namespace="##other" processContents="lax" />
+          <xs:any namespace="##local" processContents="lax" />
+        </xs:choice>
+        <xs:attribute name="attachmentIdRef" type="xs:IDREF" />
+        <xs:anyAttribute namespace="##any" processContents="lax" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
 
-	<xs:complexType name="BodyType">
-		<xs:sequence>
-			<xs:any namespace="##other" processContents="lax" />
-		</xs:sequence>
-	</xs:complexType>
-	
-	<xs:complexType name="AttachmentType">
-		<xs:choice>
-			<xs:element name="BinaryAttachment" type="tns:BinaryAttachmentType" />
-			<xs:any namespace="##other" processContents="lax" />
-		</xs:choice>
-		<xs:attribute name="attachmentId" type="xs:ID" />
-		<xs:anyAttribute namespace="##other" processContents="lax" />
-	</xs:complexType>
-	
-	<xs:complexType name="AttachmentsType">
-		<xs:sequence>
-			<xs:element name="Attachment" type="tns:AttachmentType" maxOccurs="unbounded" />
-		</xs:sequence>
-	</xs:complexType>
+  <xs:complexType name="AttachmentTypesType">
+    <xs:sequence>
+      <xs:element name="AttachmentType" type="tns:AttachmentTypeType" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="HeaderType">
+    <xs:sequence>
+      <xs:element name="BodyType" type="tns:XMLTypeType" />
+      <xs:element name="AttachmentTypes" type="tns:AttachmentTypesType" minOccurs="0" />
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:any namespace="##other" processContents="lax" />
+        <xs:any namespace="##local" processContents="lax" />
+      </xs:choice>
+    </xs:sequence>
+    <xs:anyAttribute namespace="##any" processContents="lax" />
+  </xs:complexType>
+
+  <xs:complexType name="BinaryAttachmentType">
+    <xs:sequence>
+      <xs:element name="Data" type="xmime:base64Binary" />
+      <xs:element name="AttachmentName" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="BodyType">
+    <xs:sequence>
+      <xs:any namespace="##any" processContents="lax" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="AttachmentType">
+    <xs:choice>
+      <xs:element name="BinaryAttachment" type="tns:BinaryAttachmentType" />
+      <xs:any namespace="##other" processContents="lax" />
+      <xs:any namespace="##local" processContents="lax" />
+    </xs:choice>
+    <xs:attribute name="attachmentId" type="xs:ID" />
+    <xs:anyAttribute namespace="##any" processContents="lax" />
+  </xs:complexType>
+
+  <xs:complexType name="AttachmentsType">
+    <xs:sequence>
+      <xs:element name="Attachment" type="tns:AttachmentType" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
 
 </xs:schema>
