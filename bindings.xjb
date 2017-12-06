@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <jxb:bindings version="1.0"
 			  xmlns:jxb="http://java.sun.com/xml/ns/jaxb"
+			  xmlns:xs="http://www.w3.org/2001/XMLSchema"
 			  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 			  xmlns:namespace="http://jaxb2-commons.dev.java.net/namespace-prefix"
 			  xsi:schemaLocation="http://java.sun.com/xml/ns/jaxb http://java.sun.com/xml/ns/jaxb/bindingschema_2_0.xsd
@@ -11,5 +12,16 @@
 			<jxb:package name="org.iru.epd.model.message.nons" />
 		</jxb:schemaBindings>
 	</jxb:bindings>
+
+	<jxb:bindings schemaLocation="src/main/resources/TIREPD_Envelope.xsd">
+		<jxb:bindings node="//xs:complexType[@name='AttachmentType']/xs:choice/xs:any[@namespace='##local']">
+			<jxb:property name="anyLocal" />
+		</jxb:bindings>
+		<jxb:bindings node="//xs:complexType[@name='AttachmentType']/xs:choice/xs:any[@namespace='##other']">
+			<jxb:property name="anyOther" />
+		</jxb:bindings>
+	</jxb:bindings>
 	
+	
+
 </jxb:bindings>
