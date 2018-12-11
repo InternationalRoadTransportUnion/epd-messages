@@ -1,236 +1,453 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <env:Envelope xmlns:env="http://epd.iru.org/model/message/envelope">
-  <env:Header>
-    <env:BodyType>
-      <env:Element>EPD015</env:Element>
-    </env:BodyType>
-    <env:AttachmentTypes>
-      <env:AttachmentType attachmentIdRef="iruLogo">
-        <env:Element>env:BinaryAttachment</env:Element>
-        <env:Type>env:BinaryAttachmentType</env:Type>
-      </env:AttachmentType>
-    </env:AttachmentTypes>
-  </env:Header>
-  <env:Body>
-    <EPD015>
-      <HEAHEA>
-        <RefNumHEA4>XK71320025P030522</RefNumHEA4>
-        <TypOfDecHEA24>TIR</TypOfDecHEA24>
-        <CouOfDesCodHEA30>XA</CouOfDesCodHEA30>
-        <PlaOfLoaCodHEA46>UZ Tachkent</PlaOfLoaCodHEA46>
-        <CouOfDisCodHEA55>UZ</CouOfDisCodHEA55>
-        <InlTraModHEA75>3</InlTraModHEA75>
-        <TraModAtBorHEA76>3</TraModAtBorHEA76>
-        <IdeOfMeaOfTraAtDHEA78>GE123456</IdeOfMeaOfTraAtDHEA78>
-        <IdeOfMeaOfTraAtDHEA78LNG>FR</IdeOfMeaOfTraAtDHEA78LNG>
-        <NatOfMeaOfTraAtDHEA80>CH</NatOfMeaOfTraAtDHEA80>
-        <IdeOfMeaOfTraCroHEA85>GE123456</IdeOfMeaOfTraCroHEA85>
-        <IdeOfMeaOfTraCroHEA85LNG>FR</IdeOfMeaOfTraCroHEA85LNG>
-        <NatOfMeaOfTraCroHEA87>CH</NatOfMeaOfTraCroHEA87>
-        <ConIndHEA96>1</ConIndHEA96>
-        <TotNumOfIteHEA305>2</TotNumOfIteHEA305>
-        <TotNumOfPacHEA306>2000</TotNumOfPacHEA306>
-        <TotGroMasHEA307>8000.000</TotGroMasHEA307>
-        <DecDatHEA383>20171031</DecDatHEA383>
-        <DecPlaHEA394>Geneva</DecPlaHEA394>
-        <DecPlaHEA394LNG>XK</DecPlaHEA394LNG>
-        <TraChaMetOfPayHEA1>H</TraChaMetOfPayHEA1>
-        <SecHEA358>1</SecHEA358>
-        <CodPlUnHEA357>XA XAkistan Bo</CodPlUnHEA357>
-        <VehicleMakeName>015</VehicleMakeName>
-        <VehicleVIN>VIN123456</VehicleVIN>
-        <TotalInvoicedCost>
-          <CostQuantity>2500.00</CostQuantity>
-          <CostCurrencyCode>EUR</CostCurrencyCode>
-        </TotalInvoicedCost>
-      </HEAHEA>
-      <TRAPRIPC1>
-        <NamPC17>DASHOLDER</NamPC17>
-        <StrAndNumPC122>Street 1</StrAndNumPC122>
-        <PosCodPC123>Postal 1</PosCodPC123>
-        <CitPC124>City</CitPC124>
-        <CouPC125>IR</CouPC125>
-        <NADLNGPC>EN</NADLNGPC>
-        <TINPC159>HU0002200172</TINPC159>
-        <HITPC126>RUS05300077</HITPC126>
-      </TRAPRIPC1>
-      <TRACONCE1>
-        <NamCE17>KAZ Consignee Test 1</NamCE17>
-        <StrAndNumCE122>Street 1K</StrAndNumCE122>
-        <PosCodCE123>ZIP001K</PosCodCE123>
-        <CitCE124>Astana</CitCE124>
-        <CouCE125>KZ</CouCE125>
-        <NADLNGCE>EN</NADLNGCE>
-      </TRACONCE1>
-      <TRAMEANS>
-        <Vehicle>
-          <VehicleTypeCode>002</VehicleTypeCode>
-          <VehicleRegistrationNumber>GE123456</VehicleRegistrationNumber>
-          <VehicleNationality>CH</VehicleNationality>
-          <VehicleVIN>VIN123456</VehicleVIN>
-          <VehicleMark>015</VehicleMark>
-        </Vehicle>
-      </TRAMEANS>
-      <TRADRV>
-        <NamDRV>Kalamabut</NamDRV>
-        <SurNameDRV>Igor</SurNameDRV>
-        <NatDRV>TR</NatDRV>
-        <RolDRV>Driver</RolDRV>
-        <PlaceOfBrtDRV>Hefes</PlaceOfBrtDRV>
-        <DatOfBrtDRV>1998-08-27</DatOfBrtDRV>
-        <IdDRV>
-          <IdNumDRV>PASS1234</IdNumDRV>
-          <IdTypDRV>PASS</IdTypDRV>
-          <IssAuthDRV>Ankara CP</IssAuthDRV>
-          <IssCtryDRV>TR</IssCtryDRV>
-        </IdDRV>
-      </TRADRV>
-      <CUSOFFDEPEPT>
-        <RefNumEPT1>XA001</RefNumEPT1>
-      </CUSOFFDEPEPT>
-      <CUSOFFDESEST>
-        <RefNumEST1>XA002</RefNumEST1>
-      </CUSOFFDESEST>
-      <GUAGUA>
-        <GuaTypGUA1>B</GuaTypGUA1>
-        <GUAREFREF>
-          <OthGuaRefREF4>XK71320025</OthGuaRefREF4>
-        </GUAREFREF>
-      </GUAGUA>
-      <GOOITEGDS>
-        <IteNumGDS7>1</IteNumGDS7>
-        <UCR>IRU201705300077N132</UCR>
-        <ComCodTarCodGDS10>040221</ComCodTarCodGDS10>
-        <GooDesGDS23>In powder, granules or other solid forms, of a fat content, by weight, exceeding 1,5 Not containing added sugar or other sweetening matter</GooDesGDS23>
-        <GooDesGDS23LNG>EN</GooDesGDS23LNG>
-        <GroMasGDS46>3000.000</GroMasGDS46>
-        <PREADMREFAR2>
-          <PreDocTypAR21>952</PreDocTypAR21>
-          <PreDocRefAR26>XK71320025</PreDocRefAR26>
-          <PreDocRefLNG>EN</PreDocRefLNG>
-        </PREADMREFAR2>
-        <PRODOCDC2>
-          <DocTypDC21>952</DocTypDC21>
-          <DocRefDC23>XK71320025</DocRefDC23>
-          <DocRefDCLNG>EN</DocRefDCLNG>
-          <DocRefDate>2013-02-22</DocRefDate>
-        </PRODOCDC2>
-        <PRODOCDC2>
-          <DocTypDC21>730</DocTypDC21>
-          <DocRefDC23>CMRdocref001</DocRefDC23>
-          <DocRefDCLNG>EN</DocRefDCLNG>
-        </PRODOCDC2>
-        <PRODOCDC2>
-          <DocTypDC21>ZZZ</DocTypDC21>
-          <DocRefDC23>sanitdoc001</DocRefDC23>
-          <DocRefDCLNG>EN</DocRefDCLNG>
-        </PRODOCDC2>
-        <TRACONCO2>
-          <NamCO27>УЗБ Цонсигнор Тест 1</NamCO27>
-          <StrAndNumCO222>Стреет 1</StrAndNumCO222>
-          <PosCodCO223>ЗИП001</PosCodCO223>
-          <CitCO224>Тачкент</CitCO224>
-          <CouCO225>UZ</CouCO225>
-          <NADLNGGTCO>RU</NADLNGGTCO>
-        </TRACONCO2>
-        <CONNR2>
-          <ConNumNR21>AB123456</ConNumNR21>
-          <NationalityOfContainerCode>AR</NationalityOfContainerCode>
-        </CONNR2>
-        <PACGS2>
-          <MarNumOfPacGS21>Marks and numbers</MarNumOfPacGS21>
-          <MarNumOfPacGS21LNG>EN</MarNumOfPacGS21LNG>
-          <KinOfPacGS23>CT</KinOfPacGS23>
-          <NumOfPacGS24>1000</NumOfPacGS24>
-        </PACGS2>
-        <PlaOfLoaCodGDS>UZ Tachkent</PlaOfLoaCodGDS>
-        <CodPlUnGDS>XA002</CodPlUnGDS>
-        <InvoicedCost>
-          <CostQuantity>1000.00</CostQuantity>
-          <CostCurrencyCode>EUR</CostCurrencyCode>
-        </InvoicedCost>
-        <TRACORSECGOO021>
-          <NamTRACORSECGOO025>УЗБ Цонсигнор Тест 1</NamTRACORSECGOO025>
-          <StrNumTRACORSECGOO027>Стреет 1</StrNumTRACORSECGOO027>
-          <PosCodTRACORSECGOO026>ЗИП001</PosCodTRACORSECGOO026>
-          <CitTRACORSECGOO022>Тачкент</CitTRACORSECGOO022>
-          <CouCodTRACORSECGOO023>UZ</CouCodTRACORSECGOO023>
-          <TRACORSECGOO021LNG>RU</TRACORSECGOO021LNG>
-        </TRACORSECGOO021>
-      </GOOITEGDS>
-      <GOOITEGDS>
-        <IteNumGDS7>2</IteNumGDS7>
-        <UCR>IRU201705300077N133</UCR>
-        <ComCodTarCodGDS10>250100</ComCodTarCodGDS10>
-        <GooDesGDS23>Соль (включая соль столовую и денатурированную) и хлорид натрия чистый, растворенные или не растворенные в воде, или содержащие или не содержащие добавки агентов, препятствующих слипанию или обеспечивающих сыпучесть вода морская</GooDesGDS23>
-        <GooDesGDS23LNG>RU</GooDesGDS23LNG>
-        <GroMasGDS46>5000.000</GroMasGDS46>
-        <PREADMREFAR2>
-          <PreDocTypAR21>952</PreDocTypAR21>
-          <PreDocRefAR26>XK71320025</PreDocRefAR26>
-          <PreDocRefLNG>EN</PreDocRefLNG>
-        </PREADMREFAR2>
-        <PRODOCDC2>
-          <DocTypDC21>730</DocTypDC21>
-          <DocRefDC23>CMRdocref001</DocRefDC23>
-          <DocRefDCLNG>EN</DocRefDCLNG>
-        </PRODOCDC2>
-        <PRODOCDC2>
-          <DocTypDC21>861</DocTypDC21>
-          <DocRefDC23>CertOfOrigin001</DocRefDC23>
-          <DocRefDCLNG>EN</DocRefDCLNG>
-        </PRODOCDC2>
-        <TRACONCO2>
-          <NamCO27>УЗБ Цонсигнор Тест 2</NamCO27>
-          <StrAndNumCO222>Стреет 2</StrAndNumCO222>
-          <PosCodCO223>ЗИП002</PosCodCO223>
-          <CitCO224>Келес</CitCO224>
-          <CouCO225>UZ</CouCO225>
-          <NADLNGGTCO>RU</NADLNGGTCO>
-        </TRACONCO2>
-        <PACGS2>
-          <MarNumOfPacGS21>Povarennaya sol</MarNumOfPacGS21>
-          <MarNumOfPacGS21LNG>RU</MarNumOfPacGS21LNG>
-          <KinOfPacGS23>BG</KinOfPacGS23>
-          <NumOfPacGS24>1000</NumOfPacGS24>
-        </PACGS2>
-        <PlaOfLoaCodGDS>UZ Tachkent</PlaOfLoaCodGDS>
-        <CodPlUnGDS>XA002</CodPlUnGDS>
-        <InvoicedCost>
-          <CostQuantity>1500.00</CostQuantity>
-          <CostCurrencyCode>EUR</CostCurrencyCode>
-        </InvoicedCost>
-        <TRACORSECGOO021>
-          <NamTRACORSECGOO025>УЗБ Цонсигнор Тест 2</NamTRACORSECGOO025>
-          <StrNumTRACORSECGOO027>Стреет 2</StrNumTRACORSECGOO027>
-          <PosCodTRACORSECGOO026>ЗИП002</PosCodTRACORSECGOO026>
-          <CitTRACORSECGOO022>Келес</CitTRACORSECGOO022>
-          <CouCodTRACORSECGOO023>UZ</CouCodTRACORSECGOO023>
-          <TRACORSECGOO021LNG>RU</TRACORSECGOO021LNG>
-        </TRACORSECGOO021>
-      </GOOITEGDS>
-      <ITI>
-        <CouOfRouCodITI1>UZ</CouOfRouCodITI1>
-      </ITI>
-      <ITI>
-        <CouOfRouCodITI1>XA</CouOfRouCodITI1>
-      </ITI>
-      <TRACONSEC029>
-        <NameTRACONSEC033>KAZ Consignee Test 1</NameTRACONSEC033>
-        <StrNumTRACONSEC035>Street 1K</StrNumTRACONSEC035>
-        <PosCodTRACONSEC034>ZIP001K</PosCodTRACONSEC034>
-        <CitTRACONSEC030>Astana</CitTRACONSEC030>
-        <CouCodTRACONSEC031>KZ</CouCodTRACONSEC031>
-        <TRACONSEC029LNG>EN</TRACONSEC029LNG>
-      </TRACONSEC029>
-    </EPD015>
-  </env:Body>
-  <env:Attachments>
-    <env:Attachment attachmentId="iruLogo">
-      <env:BinaryAttachment>
-        <env:Data xmime:contentType="image/png" xmlns:xmime="http://www.w3.org/2005/05/xmlmime">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</env:Data>
-        <env:AttachmentName>IRU_email_logo.png</env:AttachmentName>
-      </env:BinaryAttachment>
-    </env:Attachment>
-  </env:Attachments>
+    <env:Header>
+        <env:BodyType>
+            <env:Element>EPD015</env:Element>
+        </env:BodyType>
+        <env:AttachmentTypes>
+            <env:AttachmentType attachmentIdRef="iruLogo">
+                <env:Element>env:BinaryAttachment</env:Element>
+                <env:Type>env:BinaryAttachmentType</env:Type>
+            </env:AttachmentType>
+            <env:AttachmentType attachmentIdRef="otherEPD015">
+                <env:Element>EPD015</env:Element>
+            </env:AttachmentType>
+        </env:AttachmentTypes>
+    </env:Header>
+    <env:Body>
+        <EPD015>
+            <HEAHEA>
+                <RefNumHEA4>XK71320025P030522</RefNumHEA4>
+                <TypOfDecHEA24>TIR</TypOfDecHEA24>
+                <CouOfDesCodHEA30>XA</CouOfDesCodHEA30>
+                <PlaOfLoaCodHEA46>UZ Tachkent</PlaOfLoaCodHEA46>
+                <CouOfDisCodHEA55>UZ</CouOfDisCodHEA55>
+                <InlTraModHEA75>3</InlTraModHEA75>
+                <TraModAtBorHEA76>3</TraModAtBorHEA76>
+                <IdeOfMeaOfTraAtDHEA78>GE123456</IdeOfMeaOfTraAtDHEA78>
+                <IdeOfMeaOfTraAtDHEA78LNG>FR</IdeOfMeaOfTraAtDHEA78LNG>
+                <NatOfMeaOfTraAtDHEA80>CH</NatOfMeaOfTraAtDHEA80>
+                <IdeOfMeaOfTraCroHEA85>GE123456</IdeOfMeaOfTraCroHEA85>
+                <IdeOfMeaOfTraCroHEA85LNG>FR</IdeOfMeaOfTraCroHEA85LNG>
+                <NatOfMeaOfTraCroHEA87>CH</NatOfMeaOfTraCroHEA87>
+                <ConIndHEA96>1</ConIndHEA96>
+                <TotNumOfIteHEA305>2</TotNumOfIteHEA305>
+                <TotNumOfPacHEA306>2000</TotNumOfPacHEA306>
+                <TotGroMasHEA307>8000.000</TotGroMasHEA307>
+                <DecDatHEA383>20171031</DecDatHEA383>
+                <DecPlaHEA394>Geneva</DecPlaHEA394>
+                <DecPlaHEA394LNG>XK</DecPlaHEA394LNG>
+                <TraChaMetOfPayHEA1>H</TraChaMetOfPayHEA1>
+                <SecHEA358>1</SecHEA358>
+                <CodPlUnHEA357>XA XAkistan Bo</CodPlUnHEA357>
+                <VehicleMakeName>015</VehicleMakeName>
+                <VehicleVIN>VIN123456</VehicleVIN>
+                <TotalInvoicedCost>
+                    <CostQuantity>2500.00</CostQuantity>
+                    <CostCurrencyCode>EUR</CostCurrencyCode>
+                </TotalInvoicedCost>
+            </HEAHEA>
+            <TRAPRIPC1>
+                <NamPC17>DASHOLDER</NamPC17>
+                <StrAndNumPC122>Street 1</StrAndNumPC122>
+                <PosCodPC123>Postal 1</PosCodPC123>
+                <CitPC124>City</CitPC124>
+                <CouPC125>IR</CouPC125>
+                <NADLNGPC>EN</NADLNGPC>
+                <TINPC159>HU0002200172</TINPC159>
+                <HITPC126>RUS05300077</HITPC126>
+            </TRAPRIPC1>
+            <TRACONCE1>
+                <NamCE17>KAZ Consignee Test 1</NamCE17>
+                <StrAndNumCE122>Street 1K</StrAndNumCE122>
+                <PosCodCE123>ZIP001K</PosCodCE123>
+                <CitCE124>Astana</CitCE124>
+                <CouCE125>KZ</CouCE125>
+                <NADLNGCE>EN</NADLNGCE>
+            </TRACONCE1>
+            <TRAMEANS>
+                <Vehicle>
+                    <VehicleTypeCode>002</VehicleTypeCode>
+                    <VehicleRegistrationNumber>GE123456</VehicleRegistrationNumber>
+                    <VehicleNationality>CH</VehicleNationality>
+                    <VehicleVIN>VIN123456</VehicleVIN>
+                    <VehicleMark>015</VehicleMark>
+                </Vehicle>
+            </TRAMEANS>
+            <TRADRV>
+                <NamDRV>Kalamabut</NamDRV>
+                <SurNameDRV>Igor</SurNameDRV>
+                <NatDRV>TR</NatDRV>
+                <RolDRV>Driver</RolDRV>
+                <PlaceOfBrtDRV>Hefes</PlaceOfBrtDRV>
+                <DatOfBrtDRV>1998-08-27</DatOfBrtDRV>
+                <IdDRV>
+                    <IdNumDRV>PASS1234</IdNumDRV>
+                    <IdTypDRV>PASS</IdTypDRV>
+                    <IssAuthDRV>Ankara CP</IssAuthDRV>
+                    <IssCtryDRV>TR</IssCtryDRV>
+                </IdDRV>
+            </TRADRV>
+            <CUSOFFDEPEPT>
+                <RefNumEPT1>XA001</RefNumEPT1>
+            </CUSOFFDEPEPT>
+            <CUSOFFDESEST>
+                <RefNumEST1>XA002</RefNumEST1>
+            </CUSOFFDESEST>
+            <GUAGUA>
+                <GuaTypGUA1>B</GuaTypGUA1>
+                <GUAREFREF>
+                    <OthGuaRefREF4>XK71320025</OthGuaRefREF4>
+                </GUAREFREF>
+            </GUAGUA>
+            <GOOITEGDS>
+                <IteNumGDS7>1</IteNumGDS7>
+                <UCR>IRU201705300077N132</UCR>
+                <ComCodTarCodGDS10>040221</ComCodTarCodGDS10>
+                <GooDesGDS23>In powder, granules or other solid forms, of a fat content, by weight, exceeding 1,5 Not containing added sugar or other sweetening matter</GooDesGDS23>
+                <GooDesGDS23LNG>EN</GooDesGDS23LNG>
+                <GroMasGDS46>3000.000</GroMasGDS46>
+                <PREADMREFAR2>
+                    <PreDocTypAR21>952</PreDocTypAR21>
+                    <PreDocRefAR26>XK71320025</PreDocRefAR26>
+                    <PreDocRefLNG>EN</PreDocRefLNG>
+                </PREADMREFAR2>
+                <PRODOCDC2>
+                    <DocTypDC21>952</DocTypDC21>
+                    <DocRefDC23>XK71320025</DocRefDC23>
+                    <DocRefDCLNG>EN</DocRefDCLNG>
+                    <DocRefDate>2013-02-22</DocRefDate>
+                </PRODOCDC2>
+                <PRODOCDC2>
+                    <DocTypDC21>730</DocTypDC21>
+                    <DocRefDC23>CMRdocref001</DocRefDC23>
+                    <DocRefDCLNG>EN</DocRefDCLNG>
+                </PRODOCDC2>
+                <PRODOCDC2>
+                    <DocTypDC21>ZZZ</DocTypDC21>
+                    <DocRefDC23>sanitdoc001</DocRefDC23>
+                    <DocRefDCLNG>EN</DocRefDCLNG>
+                </PRODOCDC2>
+                <TRACONCO2>
+                    <NamCO27>УЗБ Цонсигнор Тест 1</NamCO27>
+                    <StrAndNumCO222>Стреет 1</StrAndNumCO222>
+                    <PosCodCO223>ЗИП001</PosCodCO223>
+                    <CitCO224>Тачкент</CitCO224>
+                    <CouCO225>UZ</CouCO225>
+                    <NADLNGGTCO>RU</NADLNGGTCO>
+                </TRACONCO2>
+                <CONNR2>
+                    <ConNumNR21>AB123456</ConNumNR21>
+                    <NationalityOfContainerCode>AR</NationalityOfContainerCode>
+                </CONNR2>
+                <PACGS2>
+                    <MarNumOfPacGS21>Marks and numbers</MarNumOfPacGS21>
+                    <MarNumOfPacGS21LNG>EN</MarNumOfPacGS21LNG>
+                    <KinOfPacGS23>CT</KinOfPacGS23>
+                    <NumOfPacGS24>1000</NumOfPacGS24>
+                </PACGS2>
+                <PlaOfLoaCodGDS>UZ Tachkent</PlaOfLoaCodGDS>
+                <CodPlUnGDS>XA002</CodPlUnGDS>
+                <InvoicedCost>
+                    <CostQuantity>1000.00</CostQuantity>
+                    <CostCurrencyCode>EUR</CostCurrencyCode>
+                </InvoicedCost>
+                <TRACORSECGOO021>
+                    <NamTRACORSECGOO025>УЗБ Цонсигнор Тест 1</NamTRACORSECGOO025>
+                    <StrNumTRACORSECGOO027>Стреет 1</StrNumTRACORSECGOO027>
+                    <PosCodTRACORSECGOO026>ЗИП001</PosCodTRACORSECGOO026>
+                    <CitTRACORSECGOO022>Тачкент</CitTRACORSECGOO022>
+                    <CouCodTRACORSECGOO023>UZ</CouCodTRACORSECGOO023>
+                    <TRACORSECGOO021LNG>RU</TRACORSECGOO021LNG>
+                </TRACORSECGOO021>
+            </GOOITEGDS>
+            <GOOITEGDS>
+                <IteNumGDS7>2</IteNumGDS7>
+                <UCR>IRU201705300077N133</UCR>
+                <ComCodTarCodGDS10>250100</ComCodTarCodGDS10>
+                <GooDesGDS23>Соль (включая соль столовую и денатурированную) и хлорид натрия чистый, растворенные или не растворенные в воде, или содержащие или не содержащие добавки агентов, препятствующих слипанию или обеспечивающих сыпучесть вода морская</GooDesGDS23>
+                <GooDesGDS23LNG>RU</GooDesGDS23LNG>
+                <GroMasGDS46>5000.000</GroMasGDS46>
+                <PREADMREFAR2>
+                    <PreDocTypAR21>952</PreDocTypAR21>
+                    <PreDocRefAR26>XK71320025</PreDocRefAR26>
+                    <PreDocRefLNG>EN</PreDocRefLNG>
+                </PREADMREFAR2>
+                <PRODOCDC2>
+                    <DocTypDC21>730</DocTypDC21>
+                    <DocRefDC23>CMRdocref001</DocRefDC23>
+                    <DocRefDCLNG>EN</DocRefDCLNG>
+                </PRODOCDC2>
+                <PRODOCDC2>
+                    <DocTypDC21>861</DocTypDC21>
+                    <DocRefDC23>CertOfOrigin001</DocRefDC23>
+                    <DocRefDCLNG>EN</DocRefDCLNG>
+                </PRODOCDC2>
+                <TRACONCO2>
+                    <NamCO27>УЗБ Цонсигнор Тест 2</NamCO27>
+                    <StrAndNumCO222>Стреет 2</StrAndNumCO222>
+                    <PosCodCO223>ЗИП002</PosCodCO223>
+                    <CitCO224>Келес</CitCO224>
+                    <CouCO225>UZ</CouCO225>
+                    <NADLNGGTCO>RU</NADLNGGTCO>
+                </TRACONCO2>
+                <PACGS2>
+                    <MarNumOfPacGS21>Povarennaya sol</MarNumOfPacGS21>
+                    <MarNumOfPacGS21LNG>RU</MarNumOfPacGS21LNG>
+                    <KinOfPacGS23>BG</KinOfPacGS23>
+                    <NumOfPacGS24>1000</NumOfPacGS24>
+                </PACGS2>
+                <PlaOfLoaCodGDS>UZ Tachkent</PlaOfLoaCodGDS>
+                <CodPlUnGDS>XA002</CodPlUnGDS>
+                <InvoicedCost>
+                    <CostQuantity>1500.00</CostQuantity>
+                    <CostCurrencyCode>EUR</CostCurrencyCode>
+                </InvoicedCost>
+                <TRACORSECGOO021>
+                    <NamTRACORSECGOO025>УЗБ Цонсигнор Тест 2</NamTRACORSECGOO025>
+                    <StrNumTRACORSECGOO027>Стреет 2</StrNumTRACORSECGOO027>
+                    <PosCodTRACORSECGOO026>ЗИП002</PosCodTRACORSECGOO026>
+                    <CitTRACORSECGOO022>Келес</CitTRACORSECGOO022>
+                    <CouCodTRACORSECGOO023>UZ</CouCodTRACORSECGOO023>
+                    <TRACORSECGOO021LNG>RU</TRACORSECGOO021LNG>
+                </TRACORSECGOO021>
+            </GOOITEGDS>
+            <ITI>
+                <CouOfRouCodITI1>UZ</CouOfRouCodITI1>
+            </ITI>
+            <ITI>
+                <CouOfRouCodITI1>XA</CouOfRouCodITI1>
+            </ITI>
+            <TRACONSEC029>
+                <NameTRACONSEC033>KAZ Consignee Test 1</NameTRACONSEC033>
+                <StrNumTRACONSEC035>Street 1K</StrNumTRACONSEC035>
+                <PosCodTRACONSEC034>ZIP001K</PosCodTRACONSEC034>
+                <CitTRACONSEC030>Astana</CitTRACONSEC030>
+                <CouCodTRACONSEC031>KZ</CouCodTRACONSEC031>
+                <TRACONSEC029LNG>EN</TRACONSEC029LNG>
+            </TRACONSEC029>
+        </EPD015>
+    </env:Body>
+    <env:Attachments>
+        <env:Attachment attachmentId="iruLogo">
+            <env:BinaryAttachment>
+                <env:Data xmime:contentType="image/png" xmlns:xmime="http://www.w3.org/2005/05/xmlmime">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</env:Data>
+                <env:AttachmentName>IRU_email_logo.png</env:AttachmentName>
+            </env:BinaryAttachment>
+        </env:Attachment>
+        <env:Attachment attachmentId="otherEPD015">
+            <EPD015>
+                <HEAHEA>
+                    <RefNumHEA4>XK71320025P030522</RefNumHEA4>
+                    <TypOfDecHEA24>TIR</TypOfDecHEA24>
+                    <CouOfDesCodHEA30>XA</CouOfDesCodHEA30>
+                    <PlaOfLoaCodHEA46>UZ Tachkent</PlaOfLoaCodHEA46>
+                    <CouOfDisCodHEA55>UZ</CouOfDisCodHEA55>
+                    <InlTraModHEA75>3</InlTraModHEA75>
+                    <TraModAtBorHEA76>3</TraModAtBorHEA76>
+                    <IdeOfMeaOfTraAtDHEA78>GE123456</IdeOfMeaOfTraAtDHEA78>
+                    <IdeOfMeaOfTraAtDHEA78LNG>FR</IdeOfMeaOfTraAtDHEA78LNG>
+                    <NatOfMeaOfTraAtDHEA80>CH</NatOfMeaOfTraAtDHEA80>
+                    <IdeOfMeaOfTraCroHEA85>GE123456</IdeOfMeaOfTraCroHEA85>
+                    <IdeOfMeaOfTraCroHEA85LNG>FR</IdeOfMeaOfTraCroHEA85LNG>
+                    <NatOfMeaOfTraCroHEA87>CH</NatOfMeaOfTraCroHEA87>
+                    <ConIndHEA96>1</ConIndHEA96>
+                    <TotNumOfIteHEA305>2</TotNumOfIteHEA305>
+                    <TotNumOfPacHEA306>2000</TotNumOfPacHEA306>
+                    <TotGroMasHEA307>8000.000</TotGroMasHEA307>
+                    <DecDatHEA383>20171031</DecDatHEA383>
+                    <DecPlaHEA394>Geneva</DecPlaHEA394>
+                    <DecPlaHEA394LNG>XK</DecPlaHEA394LNG>
+                    <TraChaMetOfPayHEA1>H</TraChaMetOfPayHEA1>
+                    <SecHEA358>1</SecHEA358>
+                    <CodPlUnHEA357>XA XAkistan Bo</CodPlUnHEA357>
+                    <VehicleMakeName>015</VehicleMakeName>
+                    <VehicleVIN>VIN123456</VehicleVIN>
+                    <TotalInvoicedCost>
+                        <CostQuantity>2500.00</CostQuantity>
+                        <CostCurrencyCode>EUR</CostCurrencyCode>
+                    </TotalInvoicedCost>
+                </HEAHEA>
+                <TRAPRIPC1>
+                    <NamPC17>DASHOLDER</NamPC17>
+                    <StrAndNumPC122>Street 1</StrAndNumPC122>
+                    <PosCodPC123>Postal 1</PosCodPC123>
+                    <CitPC124>City</CitPC124>
+                    <CouPC125>IR</CouPC125>
+                    <NADLNGPC>EN</NADLNGPC>
+                    <TINPC159>HU0002200172</TINPC159>
+                    <HITPC126>RUS05300077</HITPC126>
+                </TRAPRIPC1>
+                <TRACONCE1>
+                    <NamCE17>KAZ Consignee Test 1</NamCE17>
+                    <StrAndNumCE122>Street 1K</StrAndNumCE122>
+                    <PosCodCE123>ZIP001K</PosCodCE123>
+                    <CitCE124>Astana</CitCE124>
+                    <CouCE125>KZ</CouCE125>
+                    <NADLNGCE>EN</NADLNGCE>
+                </TRACONCE1>
+                <TRAMEANS>
+                    <Vehicle>
+                        <VehicleTypeCode>002</VehicleTypeCode>
+                        <VehicleRegistrationNumber>GE123456</VehicleRegistrationNumber>
+                        <VehicleNationality>CH</VehicleNationality>
+                        <VehicleVIN>VIN123456</VehicleVIN>
+                        <VehicleMark>015</VehicleMark>
+                    </Vehicle>
+                </TRAMEANS>
+                <TRADRV>
+                    <NamDRV>Kalamabut</NamDRV>
+                    <SurNameDRV>Igor</SurNameDRV>
+                    <NatDRV>TR</NatDRV>
+                    <RolDRV>Driver</RolDRV>
+                    <PlaceOfBrtDRV>Hefes</PlaceOfBrtDRV>
+                    <DatOfBrtDRV>1998-08-27</DatOfBrtDRV>
+                    <IdDRV>
+                        <IdNumDRV>PASS1234</IdNumDRV>
+                        <IdTypDRV>PASS</IdTypDRV>
+                        <IssAuthDRV>Ankara CP</IssAuthDRV>
+                        <IssCtryDRV>TR</IssCtryDRV>
+                    </IdDRV>
+                </TRADRV>
+                <CUSOFFDEPEPT>
+                    <RefNumEPT1>XA001</RefNumEPT1>
+                </CUSOFFDEPEPT>
+                <CUSOFFDESEST>
+                    <RefNumEST1>XA002</RefNumEST1>
+                </CUSOFFDESEST>
+                <GUAGUA>
+                    <GuaTypGUA1>B</GuaTypGUA1>
+                    <GUAREFREF>
+                        <OthGuaRefREF4>XK71320025</OthGuaRefREF4>
+                    </GUAREFREF>
+                </GUAGUA>
+                <GOOITEGDS>
+                    <IteNumGDS7>1</IteNumGDS7>
+                    <UCR>IRU201705300077N132</UCR>
+                    <ComCodTarCodGDS10>040221</ComCodTarCodGDS10>
+                    <GooDesGDS23>In powder, granules or other solid forms, of a fat content, by weight, exceeding 1,5 Not containing added sugar or other sweetening matter</GooDesGDS23>
+                    <GooDesGDS23LNG>EN</GooDesGDS23LNG>
+                    <GroMasGDS46>3000.000</GroMasGDS46>
+                    <PREADMREFAR2>
+                        <PreDocTypAR21>952</PreDocTypAR21>
+                        <PreDocRefAR26>XK71320025</PreDocRefAR26>
+                        <PreDocRefLNG>EN</PreDocRefLNG>
+                    </PREADMREFAR2>
+                    <PRODOCDC2>
+                        <DocTypDC21>952</DocTypDC21>
+                        <DocRefDC23>XK71320025</DocRefDC23>
+                        <DocRefDCLNG>EN</DocRefDCLNG>
+                        <DocRefDate>2013-02-22</DocRefDate>
+                    </PRODOCDC2>
+                    <PRODOCDC2>
+                        <DocTypDC21>730</DocTypDC21>
+                        <DocRefDC23>CMRdocref001</DocRefDC23>
+                        <DocRefDCLNG>EN</DocRefDCLNG>
+                    </PRODOCDC2>
+                    <PRODOCDC2>
+                        <DocTypDC21>ZZZ</DocTypDC21>
+                        <DocRefDC23>sanitdoc001</DocRefDC23>
+                        <DocRefDCLNG>EN</DocRefDCLNG>
+                    </PRODOCDC2>
+                    <TRACONCO2>
+                        <NamCO27>УЗБ Цонсигнор Тест 1</NamCO27>
+                        <StrAndNumCO222>Стреет 1</StrAndNumCO222>
+                        <PosCodCO223>ЗИП001</PosCodCO223>
+                        <CitCO224>Тачкент</CitCO224>
+                        <CouCO225>UZ</CouCO225>
+                        <NADLNGGTCO>RU</NADLNGGTCO>
+                    </TRACONCO2>
+                    <CONNR2>
+                        <ConNumNR21>AB123456</ConNumNR21>
+                        <NationalityOfContainerCode>AR</NationalityOfContainerCode>
+                    </CONNR2>
+                    <PACGS2>
+                        <MarNumOfPacGS21>Marks and numbers</MarNumOfPacGS21>
+                        <MarNumOfPacGS21LNG>EN</MarNumOfPacGS21LNG>
+                        <KinOfPacGS23>CT</KinOfPacGS23>
+                        <NumOfPacGS24>1000</NumOfPacGS24>
+                    </PACGS2>
+                    <PlaOfLoaCodGDS>UZ Tachkent</PlaOfLoaCodGDS>
+                    <CodPlUnGDS>XA002</CodPlUnGDS>
+                    <InvoicedCost>
+                        <CostQuantity>1000.00</CostQuantity>
+                        <CostCurrencyCode>EUR</CostCurrencyCode>
+                    </InvoicedCost>
+                    <TRACORSECGOO021>
+                        <NamTRACORSECGOO025>УЗБ Цонсигнор Тест 1</NamTRACORSECGOO025>
+                        <StrNumTRACORSECGOO027>Стреет 1</StrNumTRACORSECGOO027>
+                        <PosCodTRACORSECGOO026>ЗИП001</PosCodTRACORSECGOO026>
+                        <CitTRACORSECGOO022>Тачкент</CitTRACORSECGOO022>
+                        <CouCodTRACORSECGOO023>UZ</CouCodTRACORSECGOO023>
+                        <TRACORSECGOO021LNG>RU</TRACORSECGOO021LNG>
+                    </TRACORSECGOO021>
+                </GOOITEGDS>
+                <GOOITEGDS>
+                    <IteNumGDS7>2</IteNumGDS7>
+                    <UCR>IRU201705300077N133</UCR>
+                    <ComCodTarCodGDS10>250100</ComCodTarCodGDS10>
+                    <GooDesGDS23>Соль (включая соль столовую и денатурированную) и хлорид натрия чистый, растворенные или не растворенные в воде, или содержащие или не содержащие добавки агентов, препятствующих слипанию или обеспечивающих сыпучесть вода морская</GooDesGDS23>
+                    <GooDesGDS23LNG>RU</GooDesGDS23LNG>
+                    <GroMasGDS46>5000.000</GroMasGDS46>
+                    <PREADMREFAR2>
+                        <PreDocTypAR21>952</PreDocTypAR21>
+                        <PreDocRefAR26>XK71320025</PreDocRefAR26>
+                        <PreDocRefLNG>EN</PreDocRefLNG>
+                    </PREADMREFAR2>
+                    <PRODOCDC2>
+                        <DocTypDC21>730</DocTypDC21>
+                        <DocRefDC23>CMRdocref001</DocRefDC23>
+                        <DocRefDCLNG>EN</DocRefDCLNG>
+                    </PRODOCDC2>
+                    <PRODOCDC2>
+                        <DocTypDC21>861</DocTypDC21>
+                        <DocRefDC23>CertOfOrigin001</DocRefDC23>
+                        <DocRefDCLNG>EN</DocRefDCLNG>
+                    </PRODOCDC2>
+                    <TRACONCO2>
+                        <NamCO27>УЗБ Цонсигнор Тест 2</NamCO27>
+                        <StrAndNumCO222>Стреет 2</StrAndNumCO222>
+                        <PosCodCO223>ЗИП002</PosCodCO223>
+                        <CitCO224>Келес</CitCO224>
+                        <CouCO225>UZ</CouCO225>
+                        <NADLNGGTCO>RU</NADLNGGTCO>
+                    </TRACONCO2>
+                    <PACGS2>
+                        <MarNumOfPacGS21>Povarennaya sol</MarNumOfPacGS21>
+                        <MarNumOfPacGS21LNG>RU</MarNumOfPacGS21LNG>
+                        <KinOfPacGS23>BG</KinOfPacGS23>
+                        <NumOfPacGS24>1000</NumOfPacGS24>
+                    </PACGS2>
+                    <PlaOfLoaCodGDS>UZ Tachkent</PlaOfLoaCodGDS>
+                    <CodPlUnGDS>XA002</CodPlUnGDS>
+                    <InvoicedCost>
+                        <CostQuantity>1500.00</CostQuantity>
+                        <CostCurrencyCode>EUR</CostCurrencyCode>
+                    </InvoicedCost>
+                    <TRACORSECGOO021>
+                        <NamTRACORSECGOO025>УЗБ Цонсигнор Тест 2</NamTRACORSECGOO025>
+                        <StrNumTRACORSECGOO027>Стреет 2</StrNumTRACORSECGOO027>
+                        <PosCodTRACORSECGOO026>ЗИП002</PosCodTRACORSECGOO026>
+                        <CitTRACORSECGOO022>Келес</CitTRACORSECGOO022>
+                        <CouCodTRACORSECGOO023>UZ</CouCodTRACORSECGOO023>
+                        <TRACORSECGOO021LNG>RU</TRACORSECGOO021LNG>
+                    </TRACORSECGOO021>
+                </GOOITEGDS>
+                <ITI>
+                    <CouOfRouCodITI1>UZ</CouOfRouCodITI1>
+                </ITI>
+                <ITI>
+                    <CouOfRouCodITI1>XA</CouOfRouCodITI1>
+                </ITI>
+                <TRACONSEC029>
+                    <NameTRACONSEC033>KAZ Consignee Test 1</NameTRACONSEC033>
+                    <StrNumTRACONSEC035>Street 1K</StrNumTRACONSEC035>
+                    <PosCodTRACONSEC034>ZIP001K</PosCodTRACONSEC034>
+                    <CitTRACONSEC030>Astana</CitTRACONSEC030>
+                    <CouCodTRACONSEC031>KZ</CouCodTRACONSEC031>
+                    <TRACONSEC029LNG>EN</TRACONSEC029LNG>
+                </TRACONSEC029>
+            </EPD015>
+        </env:Attachment>
+    </env:Attachments>
 </env:Envelope>
