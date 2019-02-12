@@ -31,7 +31,7 @@
 	</developers>
 
 	<properties>
-		<iru.w3schemas.version>1.4</iru.w3schemas.version>
+		<iru.w3schemas.version>1.5</iru.w3schemas.version>
 	</properties>
 
 	<dependencies>
