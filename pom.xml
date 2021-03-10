@@ -5,7 +5,7 @@
 
 	<groupId>org.iru.epd</groupId>
 	<artifactId>epd-messages</artifactId>
-	<version>1.1.9</version>
+	<version>1.1.10-SNAPSHOT</version>
 
 	<name>epd-messages</name>
 	<description>NCTS inspired schemas for EPD messages</description>
